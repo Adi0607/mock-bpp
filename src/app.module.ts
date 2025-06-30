@@ -1,10 +1,15 @@
-
 import { Module } from '@nestjs/common';
-import { BppController } from './bpp/bpp.controller';
-import { BppService } from './bpp/bpp.service';
+import { SearchController } from './search/search.controller';
+import { SelectController } from './select/select.controller';
+import { InitController } from './init/init.controller';
+import { ConfirmController } from './confirm/confirm.controller';
 
 @Module({
-  controllers: [BppController],
-  providers: [BppService],
+  controllers: [
+    SearchController,
+    SelectController,
+    InitController,
+    ConfirmController,
+  ],
 })
 export class AppModule {}
